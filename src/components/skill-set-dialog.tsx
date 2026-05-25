@@ -1,8 +1,8 @@
 "use client"
 
 import * as React from "react"
+
 import { skillset } from "@/lib/config"
-import SkillSet from "@/components/shared/skill-set"
 import {
   Dialog,
   DialogContent,
@@ -10,6 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
+import SkillSet from "@/components/shared/skill-set"
 
 interface SkillSetDialogProps {
   open: boolean
@@ -22,7 +23,7 @@ const SkillSetDialog: React.FC<SkillSetDialogProps> = ({
 }) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-h-[600px] max-w-md overflow-hidden">
+      <DialogContent className="flex max-h-[85vh] max-w-md flex-col overflow-hidden">
         <DialogHeader>
           <DialogTitle className="text-lg font-semibold">
             Full Skill Set List
@@ -32,8 +33,9 @@ const SkillSetDialog: React.FC<SkillSetDialogProps> = ({
           </DialogDescription>
         </DialogHeader>
 
-        <div className="flex-1 space-y-6 overflow-y-auto pr-2">
+        <div className="min-h-0 flex-1 space-y-6 overflow-y-auto pr-2">
           <SkillSet title="Frontend Centric" skillSets={skillset.frontend} />
+          <SkillSet title="Mobile Development" skillSets={skillset.mobile} />
           <SkillSet title="Backend Centric" skillSets={skillset.backend} />
           <SkillSet title="UI Framework" skillSets={skillset.ui} />
           <SkillSet

@@ -1,14 +1,15 @@
 import { GithubIcon, LinkedinIcon } from "lucide-react"
 import { RiTwitterXLine } from "react-icons/ri"
+
 import { siteConfig } from "./site"
 
 export const REPOS = [
   "animehi-stream",
   "next-insider",
   "furniture-jmq",
-  "chatup",
+  // "chatup",
   // "bq-player",
-  "just-work",
+  // "just-work",
 ]
 
 export const REPOS_URL = [

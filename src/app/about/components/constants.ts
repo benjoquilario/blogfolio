@@ -2,7 +2,7 @@
 export const PERSONAL_INFO = {
   location: "Quezon City, Philippines",
   university: "AMA University",
-  yearLevel: "4th-year BSIT student",
+  yearLevel: "graduating BSIT student",
   experience: "3+ years",
   meetupLocation: "Novaliches, Quezon City",
 } as const
@@ -25,12 +25,20 @@ export const MEETUP_ACTIVITIES = [
   "Play chess or other strategic games",
 ] as const
 
-export const WORK_EXPERIENCE = {
-  company: "Tom's World",
-  position: "Guest Service Crew",
-  duration: "Nov 2023 - May 2024",
-  logo: "/toms.png",
-} as const
+export const WORK_EXPERIENCE = [
+  {
+    company: "House of Refuge Foundation Inc.",
+    position: "Software Developer Intern",
+    duration: "2025 - 2026",
+    logo: "/HORFI logo.png",
+  },
+  {
+    company: "Tom's World",
+    position: "Guest Service Crew",
+    duration: "Nov 2023 - May 2024",
+    logo: "/toms.png",
+  },
+] as const
 
 export const EDUCATION = [
   {

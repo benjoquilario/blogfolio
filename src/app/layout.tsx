@@ -1,17 +1,20 @@
 import { Metadata } from "next"
+
 import "./globals.css"
+
 import { Geist, Geist_Mono } from "next/font/google"
-import Header from "@/components/header"
-import ThemeProvider from "@/components/theme-provider"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { siteConfig } from "@/config/site"
-import Footer from "@/components/site-footer"
-import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from "@vercel/analytics/next"
-import { PersonJsonLd, WebsiteJsonLd } from "@/components/structured-data"
 // import { MDXProvider } from "@mdx-js/react"
 // import { useMDXComponents } from "@/mdx-components"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+
+import { siteConfig } from "@/config/site"
+import { Toaster } from "@/components/ui/toaster"
+import Header from "@/components/header"
+import Footer from "@/components/site-footer"
+import { PersonJsonLd, WebsiteJsonLd } from "@/components/structured-data"
+import { TailwindIndicator } from "@/components/tailwind-indicator"
+import ThemeProvider from "@/components/theme-provider"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -127,7 +130,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiase min-h-screen`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <div className="mx-auto max-w-4xl p-4">
             <Header />
             <main>{children}</main>

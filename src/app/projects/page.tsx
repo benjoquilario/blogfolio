@@ -1,13 +1,13 @@
-import React from "react"
-import { TypographyH2 } from "@/components/typography"
-import RepositoriesItem from "@/components/shared/repositories-item"
-import { REPOS_URL } from "@/config/config"
-import Image from "next/image"
-import { Suspense } from "react"
-import RepositorySkeleton from "@/components/skeleton/repositories-skeleton"
-import { Repository } from "@/components/shared/repositories"
+import React, { Suspense } from "react"
 import { Metadata } from "next"
+import Image from "next/image"
+
+import { REPOS_URL } from "@/config/config"
 import { siteConfig } from "@/config/site"
+import { Repository } from "@/components/shared/repositories"
+import RepositoriesItem from "@/components/shared/repositories-item"
+import RepositorySkeleton from "@/components/skeleton/repositories-skeleton"
+import { TypographyH2 } from "@/components/typography"
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -73,6 +73,18 @@ const Projects = () => {
         </div>
       </div>
       <ul className="mx-0 mt-3 grid w-full grid-cols-1 gap-2.5 md:-mx-4">
+        <Repository
+          name="Sure-Win"
+          isPrivate
+          topics={["react-native", "expo", "social-work", "education"]}
+          description="A React Native and Expo mobile reviewer that helps social work students prepare for board exams with guided practice, progress tracking, community, and subscriptions."
+        />
+        <Repository
+          name="PNGOSWA"
+          isPrivate
+          topics={["association", "membership", "social-work", "dashboard"]}
+          description="A website and membership review platform for the Philippine NGO Social Workers Association, built to onboard members and help officers review applications."
+        />
         <Repository
           name="api.animehi"
           isPrivate

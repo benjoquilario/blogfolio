@@ -1,12 +1,14 @@
+import { Fragment } from "react"
+
 import { TypographyH3, TypographyP } from "@/components/typography"
+
 import CodeSpan from "./code-span"
 import {
-  PERSONAL_INFO,
-  LEARNING_FOCUS,
   HOBBIES,
+  LEARNING_FOCUS,
   MEETUP_ACTIVITIES,
+  PERSONAL_INFO,
 } from "./constants"
-import { Fragment } from "react"
 
 const AboutMeSection: React.FC = () => {
   return (
@@ -17,8 +19,7 @@ const AboutMeSection: React.FC = () => {
 
       <div className="space-y-5 text-sm leading-7 md:text-[15px]">
         <TypographyP>
-          I'm a passionate front-end web developer based in{" "}
-          {PERSONAL_INFO.location}.
+          I'm a passionate frontend developer based in {PERSONAL_INFO.location}.
         </TypographyP>
 
         <TypographyP>
@@ -27,26 +28,27 @@ const AboutMeSection: React.FC = () => {
           and <CodeSpan>CSS</CodeSpan>. The first time I used the browser's
           "Inspect Element" tool, I was amazed to see the code behind the
           scenes. During the pandemic, with more time at home and a laptop in
-          hand, I started learning web development seriously—diving into HTML,
+          hand, I started learning web development seriously, diving into HTML,
           CSS, and JavaScript. That curiosity quickly grew into a passion and
           set me on the path toward a career in tech.
         </TypographyP>
 
         <TypographyP>
           What started as teenage curiosity has evolved into over{" "}
-          {PERSONAL_INFO.experience} of coding and developing front-end
+          {PERSONAL_INFO.experience} of coding and building frontend
           applications. I've completed several freelance projects, each one
-          teaching me something new about creating digital experiences that
-          users love. Currently, I'm a {PERSONAL_INFO.yearLevel} at{" "}
-          {PERSONAL_INFO.university}, where I continue to deepen my
-          understanding of technology and software development.
+          teaching me something new about creating digital experiences that are
+          useful, thoughtful, and user-friendly. I'm currently a{" "}
+          {PERSONAL_INFO.yearLevel} at {PERSONAL_INFO.university}, where I
+          continue to deepen my understanding of software engineering, product
+          development, and modern web technologies.
         </TypographyP>
 
         <TypographyP>
-          My passion lies in front-end development and creating exceptional user
-          experiences. Recently, I've expanded my skills to include backend API
-          development and UX/UI design principles, working toward becoming a
-          well-rounded full-stack developer.
+          My passion lies in frontend development and creating polished user
+          experiences. Over time, I've also expanded my skills into backend API
+          development, mobile development, and UX/UI thinking as I work toward
+          becoming a well-rounded software developer.
         </TypographyP>
 
         <TypographyP>
@@ -63,8 +65,8 @@ const AboutMeSection: React.FC = () => {
 
         <TypographyP>
           Since technology evolves rapidly, I'm committed to continuous learning
-          and staying current with the latest developments and best practices in
-          the field.
+          and staying current with the latest tools, patterns, and best
+          practices in the field.
         </TypographyP>
 
         <TypographyP>
@@ -89,9 +91,9 @@ const AboutMeSection: React.FC = () => {
         </ul>
 
         <TypographyP>
-          I thrive both in independent work environments and collaborative team
-          settings, and I'm always eager to take on new challenges and learn
-          from different perspectives.
+          I thrive in both independent and collaborative environments, and I'm
+          always eager to take on new challenges and learn from different
+          perspectives.
         </TypographyP>
 
         <TypographyP>

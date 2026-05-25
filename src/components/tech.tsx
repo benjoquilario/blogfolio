@@ -1,24 +1,27 @@
 "use client"
 
 import React from "react"
+import { ExternalLink } from "lucide-react"
 import {
-  SiJavascript,
-  SiTypescript,
-  SiHtml5,
   SiCss3,
-  SiReact,
+  SiHtml5,
+  SiJavascript,
   SiNextdotjs,
   SiNodedotjs,
-  SiTailwindcss,
   SiPostgresql,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si"
-import { ExternalLink } from "lucide-react"
+import { TbBrandReactNative } from "react-icons/tb"
+
 import { Badge } from "./ui/badge"
 import { Button } from "./ui/button"
 
 export const CORE_TECHNOLOGIES = [
   { name: "Next.js", icon: SiNextdotjs },
   { name: "React", icon: SiReact },
+  { name: "React Native", icon: TbBrandReactNative },
   { name: "JavaScript", icon: SiJavascript },
   { name: "TypeScript", icon: SiTypescript },
   { name: "HTML5", icon: SiHtml5 },
@@ -37,7 +40,7 @@ const Tech: React.FC<TechProps> = ({ onShowFullSkills }) => {
     <section className="mt-6 space-y-4">
       <header>
         <h4 className="font-heading scroll-m-20 text-lg font-medium tracking-tight">
-          Here are a few technologies that are my cup of tea ☕
+          Here are a few technologies that are my cup of tea
         </h4>
       </header>
 
